@@ -209,5 +209,6 @@ func (d *DirectIO) Close() error {
 			return err
 		}
 	}
+	d.buf = nil
 	return d.f.Close()
 }
